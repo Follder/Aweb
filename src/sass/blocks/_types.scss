@@ -1,0 +1,42 @@
+.types {
+  padding-block: 50px;
+  background-color: #f7f7f7;
+  &__title {
+    font-size: 32px;
+
+    margin-top: 40px;
+  }
+
+  &__item {
+    padding: 40px 20px;
+
+    border-bottom: 1px solid #000;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      width: 100%;
+
+      @include on-desktop {
+        flex-direction: row;
+      }
+    }
+
+    &-img {
+      max-width: 400px;
+
+      img {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+}

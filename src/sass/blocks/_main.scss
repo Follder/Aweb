@@ -1,0 +1,33 @@
+.main {
+  font-weight: 500;
+
+  min-height: 100vh;
+
+  background-image: url('../img/bg1.jpg');
+  background-size: cover;
+  background-position: center center;
+
+  &__title {
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 60px;
+
+    text-align: left!important;
+  }
+  
+  &__overlay {
+    display: flex;
+
+    min-height: 100vh;
+    background-color: rgba(0,0,0, 0.5);
+
+  }
+
+  &__wrapper {
+    color: #fff;
+
+    padding-block: 100px;
+    padding-inline: 20px;
+    max-width: 600px;
+  }
+}
